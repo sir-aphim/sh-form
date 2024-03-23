@@ -51,3 +51,14 @@
     font-weight: 500;
     font-size: 1.5rem;
 }
+
+.text-welcome {
+	display: flex;
+	flex-direction: column;
+	gap: 30px;
+    max-width: 70%;
+}
+
+.text-welcome > .no-gap {
+    margin-top: -30px;
+}
