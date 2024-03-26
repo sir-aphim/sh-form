@@ -1,3 +1,8 @@
+:root {
+    --left-gap: 0 0 0 50px;
+    --navy-green: #007e5a;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -17,6 +22,10 @@ h3 {
 
 #content {
     display: flex;
+}
+
+figcaption a:hover {
+    opacity: 0.6;
 }
 
 .gradient {
@@ -63,9 +72,11 @@ figcaption {
 
 
 #right-bar {
+    display: flex;
     flex-flow: column nowrap;
     width: 65vw;
     background-color: #f9fafb;
+    gap: 50px;
 }
 
 .text-welcome > p {
@@ -84,7 +95,7 @@ figcaption {
 .sign-up > form {
 	width: 75%;
 	column-gap: 60px;
-	margin-left: 50px;
+	margin: var(--left-gap);
 	display: flex;
 	flex-flow: row wrap;
 	row-gap: 15px;
@@ -92,13 +103,12 @@ figcaption {
 }
 
 .text-welcome {
-    padding-left: 50px;
+    margin: var(--left-gap);
 	display: flex;
 	flex-direction: column;
 	gap: 30px;
     max-width: 70%;
     margin-top: 10%;  
-    margin-bottom: 5%;
 }
 
 input {
@@ -111,7 +121,7 @@ input {
 
 input:focus {
     outline: none;
-    border: 2px solid #5987E3;
+    border: 2px solid #A6D1B4;
 }
 
 span {
@@ -123,4 +133,38 @@ span {
 
 .text-welcome > .no-gap {
     margin-top: -30px;
+}
+
+#submit-area {
+	margin: var(--left-gap);
+}
+
+#submit-area > button {
+    cursor: pointer;
+	background-color: var(--navy-green);
+	color: white;
+	padding: 0.7rem 2.5rem;
+	border: black;
+	border-radius: 6px;
+	font-weight: bold;
+	font-size: 1rem;
+}
+
+#submit-area > p {
+	margin-top: 20px;
+}
+
+#submit-area > button:hover {
+	text-align: center;
+	background-color: #01b27e;
+}
+
+p a {
+	text-decoration: none;
+	color: var(--navy-green);
+    font-weight: bold;
+}
+
+p a:hover {
+    color: #01b27e;
 }
