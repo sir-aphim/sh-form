@@ -1,6 +1,7 @@
 :root {
     --left-gap: 0 0 0 50px;
-    --navy-green: #007e5a;
+    --navy-green: #a7dab8;
+    --light-green: #d0f7dd;
 }
 
 * {
@@ -8,16 +9,28 @@
     padding: 0;
     overflow: hidden;
     font-family: sans-serif;
-    color: inherit;
+    color: white
 }
 
-span {
-    display: block;
+.toluca-lake {
+	position: absolute;
+	height: 65vh;
+	width: 100vw;
+	background-image: url('https://images.unsplash.com/photo-1634325232058-e7b8f80cc20b?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+	opacity: .3;
+}
+
+h1 {
+    color: var(--navy-green);
+}
+
+em {
+    width: 100%;
 }
 
 h3 {
-    width: 100%;
     font-size: 1rem;
+    font-weight: 385;
 }
 
 #content {
@@ -51,23 +64,22 @@ figure > .picture {
 }
 
 #image-sidebar > .logo {
-    position: absolute;
-    max-width: 550px; 
+	position: absolute;
+	max-width: 83%;
 	max-height: 370px;
-    /* exchange the max above for something better */
 }
 
 figcaption {
-    position: absolute;
-    top: 95%;
-    left: 50%;
-    transform: translateX(-50%);
-    color: white; /* Text color */
-    padding: 10px; /* Padding around the text */
-    text-align: center; /* Align text horizontally */
-    width: max-content; /* Set width based on content */
-    font-weight: 450; /* Text weight */
-    opacity: 0.65; /* Opacity */
+	position: absolute;
+	top: 92%;
+	left: 50%;
+	transform: translateX(-50%);
+	color: white;
+	padding: 10px;
+	text-align: center;
+	width: 80%;
+	font-weight: 450;
+	opacity: 0.65;
 }
 
 
@@ -75,7 +87,7 @@ figcaption {
     display: flex;
     flex-flow: column nowrap;
     width: 65vw;
-    background-color: #f9fafb;
+    background-color: #000000;
     gap: 50px;
 }
 
@@ -86,9 +98,10 @@ figcaption {
 
 .sign-up {
 	display: flex;
-	background-color: white;
+	background-color: #27332b;
 	box-shadow: 0px 12px 15px -15px #111;
 	padding: 30px 0;
+	z-index: 1;
 }
 
 
@@ -106,6 +119,7 @@ figcaption {
 }
 
 .text-welcome {
+    z-index: 1;
     margin: var(--left-gap);
 	display: flex;
 	flex-direction: column;
@@ -115,23 +129,27 @@ figcaption {
 }
 
 input {
-	border-radius: 4px;
-	border: 2px solid #E5E7EB;
-	padding: 3px;
+    padding: 2px;
+    color: black;
 	padding-left: 8px;
 	padding-right: 6vw;
+	border: 2px solid #ccc;
+	border-radius: 5px;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+	transition: border-color 0.3s, box-shadow 0.3s;
 }
 
 input:focus {
-    outline: none;
-    border: 2px solid #A6D1B4;
+	outline: none;
+	border: 2px solid #347dca;
 }
 
 span {
+    display: block;
 	letter-spacing: 1px;
 	font-size: 0.9rem;
 	font-weight: 500;
-	color: #464545;
+	color: #ffffff;
 }
 
 .text-welcome > .no-gap {
@@ -145,7 +163,7 @@ span {
 #submit-area > button {
     cursor: pointer;
 	background-color: var(--navy-green);
-	color: white;
+	color: black;
 	padding: 0.7rem 2.5rem;
 	border: black;
 	border-radius: 6px;
@@ -159,7 +177,7 @@ span {
 
 #submit-area > button:hover {
 	text-align: center;
-	background-color: #01b27e;
+	background-color: var(--light-green);
 }
 
 p a {
@@ -169,5 +187,5 @@ p a {
 }
 
 p a:hover {
-    color: #01b27e;
+    color: var(--light-green);
 }
