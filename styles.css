@@ -20,6 +20,10 @@
 	opacity: .3;
 }
 
+.error {
+	border: 2px solid #c90000;
+}
+
 h1 {
     color: var(--navy-green);
 }
@@ -157,6 +161,23 @@ span {
 }
 
 #submit-area {
+	background: black;
+	height: 260px;
+	z-index: 1;
+	margin-top: -50px;
+	padding-top: 50px;
+}
+
+#passwordRequiredMessage {
+	visibility: hidden;
+	color: #c90000;
+	height: 18px;
+	font-size: 0.8rem;
+	font-weight: bold;
+	width: 298.75px;
+}
+
+#submit-area > * {
 	margin: var(--left-gap);
 }
 
