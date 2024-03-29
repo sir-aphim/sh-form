@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./styles.css">
-    <script src="script.js"></script>
+    <script defer src="script.js"></script>
     <title>Silent Hill, Maine</title>
 </head>
 <body>
@@ -31,7 +31,7 @@
             </div>
 
             <div class="sign-up">
-                <form id="resform" action="https://httpbin.org/post" method="post">
+                <form name="resform" action="https://httpbin.org/post" method="post">
                     <em><h3>That special place.</h3></em>
 
                     <div class="form-group">
@@ -76,7 +76,7 @@
             </div>
 
             <div id="submit-area">
-                <button type="submit" form="resform">Create Account</button>
+                <button type="submit" id="submitButton" form="resform">Create Account</button>
                 <p>Already have an account? <a href="">Log in</a></p>
             </div>
         </div>
